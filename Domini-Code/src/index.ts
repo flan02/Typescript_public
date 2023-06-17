@@ -1,6 +1,7 @@
 const userName = 'flan02'
 
-//TODO : Tipos Basicos en Typescript.
+//TODO **************************** Tipos Basicos en Typescript.
+
 // A cada variable le asignamos un tipo de dato especifico
 let myTypeString: string = 'Hello World'
 let myTypeNumber: number = 35
@@ -28,3 +29,15 @@ players = [
     [7, 'Brown'],
     [7, 'Doncic']
 ]
+
+//TODO ************************************** Inferencia de Tipos.
+// Typescript se encarga de asignar el tipo de dato a una variable dependiendo el valor inicial
+// qe le demos a la variable.
+
+let myVar; // tipo any
+let myVar1: string
+let myVar2 = 'Hello Ollie!' //? Por inferencia typescript asocia el tipo de variable a String
+let myVar3 = true //? Por inferencia la var sera Boolean.
+
+
+
