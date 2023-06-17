@@ -21,3 +21,4 @@ tsc --outDir dist index.ts && node dist/index.js
 Debemos configurar un watcher que va compilando nuestros cambios en los ficheros typescript y generando los archivos en javascript
 # tsc --outDir dist index.ts --watch
 
+******************************************
