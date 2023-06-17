@@ -1,0 +1,25 @@
+{
+  "name": "typescript_basico",
+  "version": "1.0.0",
+  "description": "Essentials about typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/flan02/Typescript_public.git"
+  },
+  "keywords": [
+    "Typescript",
+    "node.js",
+    "react.js",
+    "express"
+  ],
+  "author": "@flan02",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flan02/Typescript_public/issues"
+  },
+  "homepage": "./"
+}

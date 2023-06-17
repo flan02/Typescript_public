@@ -1,0 +1,5 @@
+const userName = 'Bezael'
+const age = 33;
+const country = 'Argentina'
+
+console.log(`Hello world! I'm from ${country}, my name is ${userName} I'm ${age} year old.`);
