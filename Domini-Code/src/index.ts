@@ -40,4 +40,15 @@ let myVar2 = 'Hello Ollie!' //? Por inferencia typescript asocia el tipo de vari
 let myVar3 = true //? Por inferencia la var sera Boolean.
 
 
+//TODO ************************************** Composicion de Tipos. (Unions, Generics)
+
+//TODO Unions Types la variable puede ser de dos o mas tipos
+
+let myVar5: string | number | null  //por si no tenemos muy claros los datos de una API.
+myVar5 = 35 // true (es boolean no esta definido y presentara error).
+
+
+
+
+
 
