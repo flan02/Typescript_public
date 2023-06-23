@@ -22,3 +22,10 @@ Debemos configurar un watcher que va compilando nuestros cambios en los ficheros
 # tsc --outDir dist index.ts --watch
 
 ******************************************
+
+# Interfaces vs Clases
+*La mayor diferencia es que la INTERFACE solo existe en tiempo de compilacion cuando nuestro codigo es compilado a javascript, las interface no existen, es decir qe no agregan ningun peso al bundle final. Solamente las usamos para verificacion de tipos*
+
+*Las clases existen en el tiempo de compilacion y de ejecucion. Podemos inicializar prop e implementar metodos y crear instancias de esa clase con la palabra reservada NEW*
+
+Lo mas normal es comenzar a trabajar con una interfaz y luego si necesitamos inicializar algunas propiedades podemos pasar a trabajar con una clase.
