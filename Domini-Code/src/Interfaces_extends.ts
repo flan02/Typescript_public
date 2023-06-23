@@ -8,6 +8,7 @@ interface Person {
 }
 
 //* extends indica qe utilizara propiedades de Person.
+
 interface Employees extends Person {
   /*  id: number
     name: string */
@@ -20,19 +21,20 @@ interface Customers extends Person {
     country: string
 }
 
-
+/*
 const employee: Employees = {
     id: 1,
     name: "Homer J Simpson",
     dept: "Ever Green 742",
 }
-
+*/
+/*
 const customer: Customers = {
     id: 1,
     name: "Montgomery Burns",
     country: "United States"
 }
-
+*/
 //TODO implementacion para Clases
 
 interface Animal {
