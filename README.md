@@ -29,3 +29,5 @@ Debemos configurar un watcher que va compilando nuestros cambios en los ficheros
 *Las clases existen en el tiempo de compilacion y de ejecucion. Podemos inicializar prop e implementar metodos y crear instancias de esa clase con la palabra reservada NEW*
 
 Lo mas normal es comenzar a trabajar con una interfaz y luego si necesitamos inicializar algunas propiedades podemos pasar a trabajar con una clase.
+
+# Namespaces no es actualizado en 2023 trabajar con MODULOS.
