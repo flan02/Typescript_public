@@ -34,12 +34,12 @@ let totalDinosaurios = 150 // inferido asocia por asignacion qe la var siempre s
 
 let myvar  //! Inicializada por defecto es de tipo ANY (prohibida)
 
-function chanchitoFeliz(config: any){  //! PROHIBIDO (no nos sirve typescript sino)
+function chanchitoFeliz(config: any) {  //! PROHIBIDO (no nos sirve typescript sino)
     return config
 }
 
 let animales: string[] = ['chanchito', 'perrito', 'gatito']
-let nums: number[] = [1,2,3]
+let nums: number[] = [1, 2, 3]
 let nums2 = [] //! Will be ANY
 let checks: boolean[] = []
 
@@ -48,7 +48,7 @@ let nums3: Array<number> = []
 
 //? map: Iteramos los elem de un arreglo y les aplicamos una fc.
 //me sugiere solo metodos para Strings reconoce el tipo de la var.
-animales.map(x => x.charAt) 
+animales.map(x => x.charAt)
 
 
 // ************************************************************************************
@@ -91,3 +91,54 @@ const estado = LoadingState.Success
 
 // **************************************************************************************
 
+//? Objetos
+//? Podemos agregar arrays y objects dentro de un objeto.
+const objeto = { id: 1, nombre: '' }
+objeto.nombre = 'Hola mundo'  //! P/ asignarle valor en TS hay que definirlo aunque sea ''.
+
+const objeto2: {
+    readonly id: number,
+    nombre?: string,
+    talla: TallaC
+} = {
+    id: 2, nombre: 'Hello world', talla: TallaC.Chica
+}
+
+// nombre opcional
+objeto2.id = 12 //! Marca error porq es una prop. READONLY no podemos sobreescribirlos.
+
+// **************************************************************************************
+
+//? Tipos
+
+type Direccion = {
+    numero: number,
+    calle: string,
+    pais: string
+}
+
+type Persona = {
+    readonly id: number,
+    nombre?: string,
+    talla: TallaC,
+    direccion: Direccion
+}
+
+const objeto3: Persona = {
+    id: 2,
+    nombre: 'Elvio',
+    talla: TallaC.Grande,
+    direccion: {
+        numero: 1,
+        calle: "Ever green",
+        pais: "Zambia"
+    }
+}
+
+const arr: Persona[] = [] // en este arreglo solo existiran elem de tipo Persona.
+
+/*
+TODO Si estamos trabajando en una bbdd podemos tener una definicion de los recursos qe se
+TODO encuentran alli y luego cuando qeremos crear un objeto le asignamos el tipo que se
+TODO encuentra almacenado en la bbdd.
+*/
