@@ -51,3 +51,43 @@ let nums3: Array<number> = []
 animales.map(x => x.charAt) 
 
 
+// ************************************************************************************
+
+//? Tupla: tipo de dato qe no existe en Javascript, pero si es implementado en TS
+//? es una variable que contiene un set de datos que se encuentran ordenados.
+// 1, edad, animales[]
+let tupla: [number, string, string[]] = [1, 'chanchito feliz', ['hello', 'ollie']]
+//? Las tuplas nos permiten almacenar datos siempre y cuando hayan sido definidos previamente
+//! Para hacer uso de las tuplas hay que manejar un control de la cantidad de datos inicializados (2 o 3 max) de lo contrario deberiamos utilizar otro tipo de dato.
+
+tupla.push(12) //! Genera un error pq VSCode no nos avisa que faltan pasar tipos de datos
+
+// *************************************************************************************
+
+//? Enum: tipo enumerado
+// podemos representar distintos estados de carga por ejemplo en una llamada a una API.
+/* 
+* 1. Idle: Aun no se llama a la API
+* 2. Loading: Se llama a la API
+* 3. Success: Respuesta exitosa
+* 4. Error: Error en la respuesta
+*/
+
+const chica = 's', mediana = 'm', grande = 'l';
+// PascalCase
+enum Talla { Chica, Mediana, Grande } // 0,1,2 
+enum TallaB { Chica = 2, Mediana, Grande } // 3,4 
+enum TallaC { Chica = 's', Mediana = 'm', Grande = 'l' } // 3,4 
+
+const var1 = Talla.Grande
+const var2 = TallaC.Grande
+console.log(var1, var2)
+
+//TODO agregar (const) delante del ENUM asi solo define las var usadas
+const enum LoadingState { Idle, Loading, Success, Error }
+
+const estado = LoadingState.Success
+
+
+// **************************************************************************************
+
