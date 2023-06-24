@@ -13,7 +13,7 @@ tsc --init (nos ayuda a montar y configurar nuestro proyecto).
 tsc + enter (compila ts a js sin ejecutar nada)
 tsc -v  (Consultamos en terminal la version de Typescript).
 tsc index.ts -> (compila nuestro archivo .js p/ el navegador)
-tsc index.ts && node index.js
+tsc index.ts && node dist/index.js
 
 Las conversiones de Typescript a Javascript siempre las hacemos en otro directorio.
 tsc --outDir dist index.ts && node dist/index.js
@@ -31,3 +31,7 @@ Debemos configurar un watcher que va compilando nuestros cambios en los ficheros
 Lo mas normal es comenzar a trabajar con una interfaz y luego si necesitamos inicializar algunas propiedades podemos pasar a trabajar con una clase.
 
 # Namespaces no es actualizado en 2023 trabajar con MODULOS.
+
+# Generics
+*Codigo reutilizable qe funciona con multiples tipos. Creamos un componente qe pueda funcionar en gran variedad de tipos en vez de en uno solo*
+**Pueden ser funciones, interfaces o clases.**
