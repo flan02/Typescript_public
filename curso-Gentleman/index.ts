@@ -50,7 +50,7 @@ const transporte: Transporte = new Transporte(200)
 console.log(transporte.getVelocidad())
 transporte.setVelocidad(200)
 
-const auto = new Auto(250, 4)
+const auto = new Auto(200, 4)
 
 const auto2 = {
     velocidad: 200,
@@ -197,14 +197,18 @@ interface Abogado extends Persona {
 
 const personita: Persona = {
     nombre: 'Juan',
-    edad: 25
+    edad: 25,
+    dni: '123456'
 }
 
 const abogadito: Abogado = {
     nombre: 'Juan',
     edad: 25,
+    dni: '123457',
     matricula: '123456'
 }
+
+// TODO : Union Types
 
 interface Interface1 {
     prop1: string
